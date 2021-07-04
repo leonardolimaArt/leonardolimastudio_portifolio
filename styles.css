@@ -95,6 +95,7 @@ button{
     top: 45%;
     left: 50%;
     width: 100%;
+    color: red;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-weight: bold;
@@ -143,7 +144,32 @@ header{
     background-color: rgba(0, 0, 0, 50%);
     position: fixed;
     width: 100%;
-    z-index:1;
+    z-index: 2;
+    
+}
+.color-box{
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 50%);
+    right: 0;
+    top: 0;
+    height: 10%;
+    width: 100%;
+    z-index: 1;
+    
+    
+}
+.color-box-footer{
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 50%);
+    right: 0;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    z-index: 1;
+    
+    
 }
 footer{
     display: flex;
@@ -154,7 +180,7 @@ footer{
     position: fixed;
     bottom: 0%;
     width: 100%;
-    z-index:1;
+    z-index: 1;
 }
 
 .nav__links{
@@ -239,10 +265,13 @@ footer{
   to {opacity: 1;}
 }
 .proj_back{
-position: fixed;
-left: 50%;
-width: 60%;
-z-index: -1000;
+    position: fixed;
+    left: 50%;
+    width: 60%;
+    z-index: -1000;
+}
+.img_back{
+    display: none;
 }
 
 * { box-sizing: border-box; }
@@ -252,12 +281,12 @@ z-index: -1000;
 .video-foreground,
 .video-background iframe {
     z-index: -1000;
-  position: fixed;
-  top: 0;
-  left: -10%;
-  width: 120%;
-  height: 100%;
-  pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: -10%;
+    width: 120%;
+    height: 100%;
+    pointer-events: none;
   
 }
 #vidtop-content {
@@ -290,7 +319,41 @@ z-index: -1000;
         text-decoration: none;
         
     }
+    .color-box{
+        display: block;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 50%);
+        right: 0;
+        top: 0;
+        height: 10%;
+        width: 100%;
+        z-index: 1;
+        
+        
+    }
+    .color-box-footer{
+        display: block;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 50%);
+        right: 0;
+        bottom: 0;
+        height: 10%;
+        width: 100%;
+        z-index: 1;
+        
+        
+    }
     /*PAGINA INICIAL*/
+    .img_back{
+        display: block;
+        position: fixed;
+        height: 100%;
+        z-index: -1000;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
     .std{
     
         color: red;
@@ -301,7 +364,7 @@ z-index: -1000;
         letter-spacing: 5px;
     }
     .textoc{
-        position: absolute;
+        position: fixed;
         text-align: center;
         letter-spacing: 5px;
         font-size: 9px;
@@ -310,13 +373,14 @@ z-index: -1000;
         width: 100%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
+        font-weight: bold;
        
     }
     .redess__links{
         display: none;
     }
     .test_a{
-        background-color: black;
+        
         position: fixed;
         top: 7%;
         left: 50%;
@@ -325,7 +389,7 @@ z-index: -1000;
         transform: translate(-50%, -50%);
     }
     .nav__links li{
-        background-color: black;
+
         display: inline-block;
         padding: 0px 13px;
         right: 0%;
@@ -341,18 +405,17 @@ z-index: -1000;
         justify-content: space-between;
         align-items: center;
         padding: 0 5%;
-        background-color: rgba(0, 0, 0, 100%);
+        background-color: rgba(0, 0, 0, 0);
         position: fixed;
         top: 2%;
         width: 100%;
-        z-index:1;
     }
     footer{
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0 5%;
-        background-color: rgba(0, 0, 0, 100%);
+        background-color: rgba(0, 0, 0, 0);
         position: fixed;
         width: 100%;
         z-index:1;
@@ -363,7 +426,7 @@ z-index: -1000;
     }
     /*PAGINA PROJETOS*/
     .textoP{
-        position: absolute;
+        position: fixed;
         text-align: center;
         letter-spacing: 15px;
         font-size: 15px;
@@ -374,11 +437,10 @@ z-index: -1000;
         transform: translate(-50%, -50%);
     }
     .textoP2{
-        position: absolute;
+        position: fixed;
         text-align: center;
         letter-spacing: 30px;
         font-size: 13px;
-        color: red;
         top: 43%;
         left: 51.5%;
         width: 100%;
@@ -387,7 +449,7 @@ z-index: -1000;
         font-weight: bold;
     }
     .textoP3{
-        position: absolute;
+        position: fixed;
         text-align: center;
         letter-spacing: 20px;
         font-size: 18px;
@@ -407,11 +469,12 @@ z-index: -1000;
     /*PAGINA EQUIPE*/
     .fotos_profile{
         width: 120px;
+        margin: 0 20px;
         height: 120px;    
     }
     /*PAGINA CONTATO*/
     .textoE{
-        position: absolute;
+        position: fixed;
         text-align: center;
         letter-spacing: 15px;
         font-size: 15px;
