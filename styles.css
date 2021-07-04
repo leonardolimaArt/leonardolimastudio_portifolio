@@ -118,6 +118,7 @@ button{
     top: 15%;
     left: 50%;
     width: 100%;
+    color: red;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
@@ -417,7 +418,6 @@ z-index: -1000;
         top: 15%;
         left: 50%;
         width: 100%;
-        color: red;
         -ms-transform: translate(-49%, -50%);
         transform: translate(-49%, -50%);
     }
