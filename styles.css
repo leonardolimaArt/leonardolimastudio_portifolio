@@ -404,10 +404,22 @@ z-index: -1000;
         z-index: -1000;
         }
     /*PAGINA EQUIPE*/
-        .fotos_profile{
-            width: 120px;
-            height: 120px;    
-        }
+    .fotos_profile{
+        width: 120px;
+        height: 120px;    
+    }
+    /*PAGINA CONTATO*/
+    .textoE{
+        position: absolute;
+        text-align: center;
+        letter-spacing: 15px;
+        font-size: 15px;
+        top: 15%;
+        left: 50%;
+        width: 100%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
 }
 
 /*@media only screen and (max-width: 1080px){
