@@ -415,11 +415,11 @@ z-index: -1000;
         letter-spacing: 15px;
         font-size: 15px;
         top: 15%;
-        left: 51.5%%;
+        left: 50%;
         width: 100%;
-        color: blue;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        color: red;
+        -ms-transform: translate(-49%, -50%);
+        transform: translate(-49%, -50%);
     }
 }
 
