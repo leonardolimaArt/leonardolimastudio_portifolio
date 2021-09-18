@@ -46,7 +46,7 @@ button{
     background-color: rgba(0, 0, 0, 0);
     border: 2px solid white;
     color: white;
-    padding: 15px 32px;
+    padding: 7px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -60,15 +60,16 @@ button{
 }
 .button1:hover{
     transition: all 0.3s ease 0s;
-    color: red;
+
+        background-color: darkred;
 }
 
 .textoc{
     position: absolute;
     text-align: center;
-    letter-spacing: 50px;
+    letter-spacing: 0px;
     font-size: 23px;
-    top: 45%;
+    top: 50%;
     left: 50%;
     width: 100%;
     -ms-transform: translate(-50%, -50%);
@@ -140,8 +141,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5%;
-    background-color: rgba(0, 0, 0, 50%);
+    padding: 0% 0%;
+    background-color: rgba(16.5, 16.5, 16.5, 100%);
     position: fixed;
     width: 100%;
     z-index: 2;
@@ -173,16 +174,20 @@ header{
 }
 footer{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 1% 5%;
+    padding: 0.3% 3%;
     background-color: rgba(0, 0, 0, 50%);
     position: fixed;
     bottom: 0%;
     width: 100%;
     z-index: 1;
-}
 
+}
+ .btn_txt{
+        font-size: 11px;
+	text-align: center;
+    }
 .nav__links{
     list-style: none;
     
@@ -191,19 +196,23 @@ footer{
 .nav__links li{
     
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 13px;
     position: relative;
-    right: 14%;
+    right: 116%;
+
     
     
 }
 
 .nav__links li a{
     transition: all 0.3s ease 0s;
+        font-weight: bold;
+	font-size: 10px;
 }
 
 .nav__links li a:hover{
     color: red;
+
 }
 
 .rede_s{
@@ -236,21 +245,31 @@ footer{
 
 .redess__links{
     list-style: none;
-    
+    background-color: darkred;    
+    padding: 10px 10px;
+	
 }
 .redess__links li{
     display: inline-block;
-    padding: 5px 5px;
+    padding: 0px 5px;
+
 }
 
 .std{
-    
+        font-size: 13px;    
     color: red;
-    letter-spacing: 20px;
+    letter-spacing: 2.5px;
+
 }
 .leolima{
-    letter-spacing: 20px;
-    font-weight: bold;
+    letter-spacing: 5px;
+        font-weight: bold;
+        font-size: 13px;
+        
+}
+.hd{
+    padding: 0% 3%;
+
 }
 .profile_text{
     font-size: 10px;
