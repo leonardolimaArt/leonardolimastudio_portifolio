@@ -191,8 +191,9 @@ footer{
 
 }
  .btn_txt{
-        font-size: 11px;
+
 	text-align: center;
+	letter-spacing: 0px;
     }
 .nav__links{
 	list-style: none;
