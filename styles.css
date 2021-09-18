@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
     
 }
 
@@ -54,6 +59,7 @@ button{
     position: absolute;
     margin: 0;
     top: 60%;
+    cursor: pointer;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -115,7 +121,7 @@ button{
 .textoE{
     position: absolute;
     text-align: center;
-    letter-spacing: 20px;
+    letter-spacing: 0px;
     font-size: 23px;
     top: 15%;
     left: 50%;
@@ -189,31 +195,32 @@ footer{
 	text-align: center;
     }
 .nav__links{
-    list-style: none;
-    
+	list-style: none;
+	cursor: pointer;
+  
 }
 
 .nav__links li{
-    
     display: inline-block;
-    padding: 0px 13px;
+    padding: 10px 13px;
     position: relative;
     right: 116%;
-
-    
     
 }
 
 .nav__links li a{
-    transition: all 0.3s ease 0s;
+   	transition: all 0.3s ease 0s;
         font-weight: bold;
 	font-size: 10px;
+   	padding: 10px 0px;
+   
 }
 
-.nav__links li a:hover{
-    color: red;
+.nav__links li:hover{
+background-color: darkred;
 
 }
+
 
 .rede_s{
     width: 15px;
@@ -256,12 +263,15 @@ footer{
 }
 
 .std{
-        font-size: 13px;    
+
+    font-size: 13px;    
     color: red;
     letter-spacing: 2.5px;
 
 }
 .leolima{
+font-family: "Roboto", sans-serif;
+    font-weight: 700;
     letter-spacing: 5px;
         font-weight: bold;
         font-size: 13px;
@@ -274,6 +284,7 @@ footer{
 .profile_text{
     font-size: 10px;
     text-align: center;
+    z-index: -1000;
 }
 .tabcontent{
     animation: fadeEffect 1s;
@@ -455,7 +466,8 @@ footer{
     .fotos_profile{
         width: 120px;
         margin: 0 20px;
-        height: 120px;    
+        height: 120px;   
+        z-index: -1000; 
     }
     /*PAGINA CONTATO*/
     .textoE{
