@@ -246,11 +246,11 @@ footer{
 .std{
     
     color: red;
-    letter-spacing: 5px
+    letter-spacing: 20px;
 }
 .leolima{
-    letter-spacing: 5px
-    font-weight: bold
+    letter-spacing: 20px;
+    font-weight: bold;
 }
 .profile_text{
     font-size: 10px;
