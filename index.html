@@ -28,10 +28,10 @@
       <div class="nav-items">
         <div class="nav-close-btn"></div>
         <nav>
-        <ul class="nav__links">
+        <ul class="nav__links menuMob">
           <li><a href="#" class="tablink" onclick="openPage ('inicio0', this)" id="defaultOpen">Inicio</a></li>
           <li><a href="#" class="tablink" onclick="openPage ('projetos0', this)">Projetos</a></li>
-          <li><a href="#">Engine</a></li>
+          <li><a href="#" class="tablink" onclick="openPage ('engine0', this)">Engine</a></li>
           <li><a href="#" class="tablink" onclick="openPage ('sobre0', this)">Contato</a></li>
         </ul>
       </nav>
@@ -50,7 +50,7 @@
         <h2 style="padding-top: 1.5em;">olá, bem vindo!</h2>
         <h3>Utilize o menu para navegar, ou dê uma olhada na seção abaixo.</h3>
         <div class="btnhome">
-          <a href="" class="btn">Sobre o Leonardo</a>
+          <a href="#" class="btn tablink" onclick="openPage ('sobre0', this)">Sobre o Leonardo</a>
           <a href="#" class="btn tablink" onclick="openPage ('projetos0', this)">Explorar Projetos</a>
         </div>
         <div class="media-icons">
@@ -69,12 +69,12 @@
       <div class="info"> 
         <h3 style="color: white;">​Conheça a minha própria tecnologia para criação de jogos em tempo real.</h3>
         <div class="btnhome">
-          <a href="" class="btn">Explorar a Engine</a>
+          <a href="#" class="btn tablink" onclick="openPage ('engine0', this)">Explorar a Engine</a>
           <a href="#" class="btn tablink" class="btn tablink" onclick="openPage ('projetos0', this)">Explorar Projetos</a>
         </div>
       </div>
     </div>
-    <video class = "video" loop="true" autoplay="autoplay" muted style="position: absolute; z-index: -9999; display: flex; width: 100%;  height: 100%; object-fit: cover; ">
+    <video class = "" loop="true" autoplay="autoplay" muted style="position: absolute; z-index: -9999; display: flex; width: 100%;  height: 100%; object-fit: cover; ">
       <source src="images/video.mp4" type="video/mp4">
     </video>
   </div>
@@ -92,7 +92,7 @@
   <div class="portfolio section">
       <div class="container flex-center">
         <div class="content">
-          <div class="services-description">
+          <div class="portfolio-description">
             <h3>Unity Engine</h3>
           </div>
           <div class="portfolio-list">
@@ -107,16 +107,7 @@
                 <img src="images/metra.png" alt="">
               </div>
             </a>
-             <!-- <div class="portfolio-model flex-center">
-                <div class="portfolio-model-body">
-                  <i class="fas fa-times portfolio-close-btn"></i>
-                  <h3>Metra Game</h3>
-                  <img src="images/flappy.jpg" alt="">
-                  <p>You need to think fast to continue swimming without being caught by the spears.  
-                    Be smart and keep scoring a lot!</p>
-                  <p style="padding-top: 5%;">Donwload on <a href="https://leonardo-lima.itch.io/flappy-jaraqui" target="_blank">ItchIo</a></p>
-                </div>
-              </div>-->
+
             </div>
 
             <div class="img-card-container">
@@ -167,7 +158,7 @@
         </div>
 
         <div class="content">
-          <div class="services-description">
+          <div class="portfolio-description">
             <h3>Inlumination Engine</h3>
           </div>
           <div class="portfolio-list">
@@ -183,16 +174,7 @@
                 </div>
                 <img src="images/engine.png" alt="">
               </div>
-             <!-- <div class="portfolio-model flex-center">
-                <div class="portfolio-model-body">
-                  <i class="fas fa-times portfolio-close-btn"></i>
-                  <h3>Metra Game</h3>
-                  <img src="images/flappy.jpg" alt="">
-                  <p>You need to think fast to continue swimming without being caught by the spears.  
-                    Be smart and keep scoring a lot!</p>
-                  <p style="padding-top: 5%;">Donwload on <a href="https://leonardo-lima.itch.io/flappy-jaraqui" target="_blank">ItchIo</a></p>
-                </div>
-              </div>-->
+ 
             </div>
 
 
@@ -207,16 +189,7 @@
                 </div>
                 <img src="images/humanSkin.png" alt="">
               </div>
-             <!-- <div class="portfolio-model flex-center">
-                <div class="portfolio-model-body">
-                  <i class="fas fa-times portfolio-close-btn"></i>
-                  <h3>Metra Game</h3>
-                  <img src="images/flappy.jpg" alt="">
-                  <p>You need to think fast to continue swimming without being caught by the spears.  
-                    Be smart and keep scoring a lot!</p>
-                  <p style="padding-top: 5%;">Donwload on <a href="https://leonardo-lima.itch.io/flappy-jaraqui" target="_blank">ItchIo</a></p>
-                </div>
-              </div>-->
+
             </div>          
             
             <div class="img-card-container">
@@ -230,23 +203,14 @@
                 </div>
                 <img src="images/pghost.jpg" alt="">
               </div>
-             <!-- <div class="portfolio-model flex-center">
-                <div class="portfolio-model-body">
-                  <i class="fas fa-times portfolio-close-btn"></i>
-                  <h3>Metra Game</h3>
-                  <img src="images/flappy.jpg" alt="">
-                  <p>You need to think fast to continue swimming without being caught by the spears.  
-                    Be smart and keep scoring a lot!</p>
-                  <p style="padding-top: 5%;">Donwload on <a href="https://leonardo-lima.itch.io/flappy-jaraqui" target="_blank">ItchIo</a></p>
-                </div>
-              </div>-->
+
             </div>        
 
           </div>
         </div>
 
         <div class="content">
-          <div class="services-description">
+          <div class="portfolio-description">
             <h3>Websites</h3>
           </div>
           <div class="portfolio-list">
@@ -263,22 +227,13 @@
                 <img src="images/portfolio.png" alt="">
               </div>
             </a>
-             <!-- <div class="portfolio-model flex-center">
-                <div class="portfolio-model-body">
-                  <i class="fas fa-times portfolio-close-btn"></i>
-                  <h3>Metra Game</h3>
-                  <img src="images/flappy.jpg" alt="">
-                  <p>You need to think fast to continue swimming without being caught by the spears.  
-                    Be smart and keep scoring a lot!</p>
-                  <p style="padding-top: 5%;">Donwload on <a href="https://leonardo-lima.itch.io/flappy-jaraqui" target="_blank">ItchIo</a></p>
-                </div>
-              </div>-->
+
             </div>            
           </div>
         </div>
 
         <div class="content">
-          <div class="services-description">
+          <div class="portfolio-description">
             <h3>Cliente - Servidor</h3>
           </div>
           <div class="portfolio-list">
@@ -295,16 +250,7 @@
                 <img src="images/listaqi.jpg" alt="">
               </div>
             </a>
-             <!-- <div class="portfolio-model flex-center">
-                <div class="portfolio-model-body">
-                  <i class="fas fa-times portfolio-close-btn"></i>
-                  <h3>Metra Game</h3>
-                  <img src="images/flappy.jpg" alt="">
-                  <p>You need to think fast to continue swimming without being caught by the spears.  
-                    Be smart and keep scoring a lot!</p>
-                  <p style="padding-top: 5%;">Donwload on <a href="https://leonardo-lima.itch.io/flappy-jaraqui" target="_blank">ItchIo</a></p>
-                </div>
-              </div>-->
+
             </div>            
           </div>
         </div>
@@ -312,6 +258,221 @@
       </div>
   </div>
 </section>
+
+<!--Engine-->
+    
+<section id="engine0" class="tabcontent">
+  <div class="home flex-center translaYEng" id="home">
+    
+    <div class="home-container" style="flex-direction: column;">
+      <div><img src="images/logoEngine.png" class="enginelogo">  </div>
+      <div class="info"> 
+        <!--<h3 style="color: white; font-size: 1.5em;">Desenvolvida para alcançar a verdadeira liberdade na criação de jogos</h3>-->
+
+      </div>
+    </div>
+    <video class = "video" loop="true" autoplay="autoplay" muted style="position: absolute; z-index: -9999; display: flex; width: 100%;  height: 100%; object-fit: cover; ">
+      <source src="images/video.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+  <div class="portfolio section">
+    <div class="container flex-center">
+      <div class="content">
+        
+        <div class="portfolio-list" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0px;">
+          <div class="img-card-container">
+            <a href="#ilumi">
+            <div class="img-card engine">
+                <div class="overlay"></div>
+              <div class="info">
+                <h3>Illuminação</h3>
+                <span style="font-size: 1em;">Ver mais <i class="fas fa-arrow-down" style="font-size: 0.8em;"></i></span>
+              </div>
+              <img src="images/homeBack0.jpg" class="engineimg">
+            </div>
+          </a>
+          </div>
+
+          <div class="img-card-container">
+            <a href="#mat">
+              <div class="img-card engine">
+                  <div class="overlay"></div>
+                <div class="info">
+                  <h3>Materiais</h3>
+                  <span style="font-size: 1em;">Ver mais <i class="fas fa-arrow-down" style="font-size: 0.8em;"></i></span>
+                </div>
+                <img src="images/homeBack.png" class="engineimg">
+              </div>
+            </a>
+          </div>
+        
+
+          <div class="img-card-container">
+            <a href="#somb">
+            <div class="img-card engine">
+              
+                <div class="overlay"></div>
+            
+              <div class="info">
+                <h3>Sombreamento</h3>
+                <span style="font-size: 1em;">Ver mais <i class="fas fa-arrow-down" style="font-size: 0.8em;"></i></span>
+              </div>
+              <img src="images/humanSkin.png" class="engineimg">
+            </div>
+          </a>
+          </div>
+
+          <div class="img-card-container">
+            <a href="#sim">
+            <div class="img-card engine">
+              
+                <div class="overlay"></div>
+            
+              <div class="info">
+                <h3>Simulação</h3>
+                <span style="font-size: 1em;">Ver mais <i class="fas fa-arrow-down" style="font-size: 0.8em;"></i></span>
+              </div>
+              <img src="images/sim.png" class="engineimg">
+            </div>
+          </a>
+          </div>
+
+          <div class="img-card-container">
+            <a href="#pos">
+            <div class="img-card engine">
+              
+                <div class="overlay"></div>
+            
+              <div class="info">
+                <h3>Pós Process</h3>
+                <span style="font-size: 1em;">Ver mais <i class="fas fa-arrow-down" style="font-size: 0.8em;"></i></span>
+              </div>
+              <img src="images/postpos.png" class="engineimg">
+            </div>
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="about section" id="ilumi">
+        <div class="container flex-center" style="margin-top: 5%;">
+          <h2 class="section-title-02" style="margin-bottom: 50px;">Illuminação</h2>
+          <div class = "blockFeatEng">
+            <div class="content flex-center">
+              <div class="about-img " style="width: 90%;display: block;margin-left: auto;margin-right: auto;">
+                <img src="images/homeBack0.jpg" class="imgAbtEngine">    
+              </div>
+            </div>
+            <div class="about-info">
+              <div class="description">
+                <h4>Voxel Global Ilumination</h4>
+                <p style="text-align: justify;">A iluminação global voxel, também conhecida como voxel GI, é uma solução de iluminação global baseada no voxel ray tracing. Não requer baking ou configuração manual de bounce lights ou light volumes.<br><br>
+
+                  O Voxel GI fornece os seguintes efeitos:<br><br>
+                  
+                  <i class="fa-solid fa-circle-check"></i> Dynamic indirect light bounce para objetos estáticos e vários objetos dinâmicos.<br>
+                  <i class="fa-solid fa-circle-check"></i> Oclusão de ambiente em larga escala e sombras indiretas de objetos estáticos.<br></p>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+
+      <div class="about section" id="mat">
+        <div class="container flex-center" style="margin-top: 5%;">
+          <h2 class="section-title-02" style="margin-bottom: 50px;">Materiais</h2>
+          <div class = "blockFeatEng">
+            <div class="about-info">
+              <div class="description">
+                <h4>Physically Based Rendering Materials</h4>
+                <p style="text-align: justify;">Physically Based Rendering Materials ou PBR Materials é um material que se aproxima da forma como a luz reflete nos objetos do mundo real, de modo que os resultados realistas sejam possíveis em todas as condições de iluminação.
+                  <br>A Inlumination Engine já conta com esse tipo de material para alcançar o melhor resultado na renderização final!</p>
+              </div>
+            </div> 
+            <div class="content flex-center">
+              <div class="about-img" style="width: 90%;display: block;margin-left: auto;margin-right: auto;">
+                <img src="images/homeBack.png" class="imgAbtEngine">    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about section" id="somb">
+        <div class="container flex-center" style="margin-top: 5%;">
+          <h2 class="section-title-02" style="margin-bottom: 50px;">Sombreamento</h2>
+          <div class = "blockFeatEng">
+            <div class="content flex-center" style="">
+              <div class="about-img" style="width: 90%;display: block;margin-left: auto;margin-right: auto;">
+                <img src="images/showhead.jpg" class="imgAbtEngine">    
+              </div>
+            </div>
+            <div class="about-info">
+              <div class="description">
+                <h4>Subsurface Scattering e mais!</h4>
+                <p style="text-align: justify;">Vários tipos de shaders foram implementados para simular o comportamento da superfície do mundo real, alguns são:<br><br>
+                  <i class="fa-solid fa-circle-check"></i> Simulação de fibra capilar.<br>
+                  <i class="fa-solid fa-circle-check"></i> Simulação de dispersão de subsuperfície.<br>
+                  <i class="fa-solid fa-circle-check"></i> Simulação de fibra de vidro.<br>
+                </p>
+                
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+
+      <div class="about section" id="sim">
+        <div class="container flex-center" style="margin-top: 5%;">
+          <h2 class="section-title-02" style="margin-bottom: 50px;">Simulação</h2>
+          <div class = "blockFeatEng">
+            <div class="about-info">
+              <div class="description">
+                <h4>Fast Fourier Transform Waves</h4>
+                <p style="text-align: justify;">Para maior imersão com os projetos produzidos na Inlumination Engine, foi implementado simulção de ondas com base no algoritmo Fast Fourier Transform ou FFT, além de contar com cálculos físicos para simular gravidade, colisão e outros elementos da mesma.</p>
+              </div>
+            </div> 
+            <div class="content flex-center">
+              <div class="about-img" style="width: 90%;display: block;margin-left: auto;margin-right: auto;">
+                <img src="images/sim.png" class="imgAbtEngine">    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about section" id="pos">
+        <div class="container flex-center" style="margin-top: 5%;">
+          <h2 class="section-title-02 posPr" style="margin-bottom: 50px;">Pós-processamento</h2>
+          <div class = "blockFeatEng">
+            <div class="content flex-center" style="">
+              <div class="about-img" style="width: 90%;display: block;margin-left: auto;margin-right: auto;">
+                <img src="images/postposwide.jpg" class="imgAbtEngine">    
+              </div>
+            </div>
+            <div class="about-info">
+              <div class="description">
+                <h4>Bloom, AO, Light Shafts e outros</h4>
+                <p style="text-align: justify;">O pós-processamento é utilizado para contribuir com a parte visual do jogo, e na Ilumination pode-se conferir opções que podem contribuir para o mesmo, como:<br><br>
+                  <i class="fa-solid fa-circle-check"></i> Light Bloom.<br>
+                  <i class="fa-solid fa-circle-check"></i> Light Shafts(Sun Shafts).<br>
+                  <i class="fa-solid fa-circle-check"></i> Ambient Occlusion.<br>
+                  <i class="fa-solid fa-circle-check"></i> Filtros para Correção de Cores.<br>
+                  <i class="fa-solid fa-circle-check"></i> Anti-aliasing.<br>
+                </p>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+</section>
+
+
 
 
 
@@ -338,7 +499,7 @@
           <h4>GameDev, Artista3D e Dev Full-Stack!</h4>
           <p>Atualmente estudando Análise e Desenvolvimento de Sistemas, Inteligencia Artificial e Machine Learning para Jogos.</p>
         </div>
-        <div class="education">
+        <div>
           <h4 style="margin-bottom: 10px;"><label>Conhecimentos</label></h4>
           <p style="font-size: 0.8em; margin-bottom: 10px;">*Valores com base na documentação total de cada tecnologia, referência 01/2022.</p>
           <ul class="bars">
